@@ -85,7 +85,7 @@ public class TestMedicaIDiagnosis {
             calculations.calDoNeutralM(pNs, sNd, i, k, pNs.get(0).size()),
             calculations.calDoNegativeM(pNs, sNd, i, k, pNs.get(0).size())));
         
-      System.out.print(pNd.get(i).get(k) + "|");
+      System.out.printf("(%.3f)", pNd.get(i).get(k));
       }
       System.out.println();
     }

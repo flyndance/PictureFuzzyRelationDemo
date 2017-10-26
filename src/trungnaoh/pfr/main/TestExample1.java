@@ -59,10 +59,11 @@ public class TestExample1 {
             calculations.calDoPositiveM(xNy, yNz, i, k, xNy.get(0).size()),
             calculations.calDoNeutralM(xNy, yNz, i, k, xNy.get(0).size()),
             calculations.calDoNegativeM(xNy, yNz, i, k, xNy.get(0).size())));
-        
-        System.out.print(xNz.get(i).get(k).getPositive() + ","
-            + xNz.get(i).get(k).getNeutral() + ","
-            + xNz.get(i).get(k).getNegative() + "|");
+
+        System.out.printf("(%.2f, %.2f, %.2f)", 
+            xNz.get(i).get(k).getPositive(),
+            xNz.get(i).get(k).getNeutral(), 
+            xNz.get(i).get(k).getNegative());
       }
       System.out.println();
     }
