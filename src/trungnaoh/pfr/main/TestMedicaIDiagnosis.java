@@ -6,7 +6,7 @@ import trungnaoh.pfr.model.PictureFuzzyRelation;
 import trungnaoh.pfr.utilities.Calculations;
 import trungnaoh.pfr.utilities.MedicalDiagnosisCalculationsImpl;
 
-public class TestMedicalIDiagnosis {
+public class TestMedicaIDiagnosis {
 
   public static void main(String[] args) {
     
@@ -84,6 +84,7 @@ public class TestMedicalIDiagnosis {
             calculations.calDoPositiveM(pNs, sNd, i, k, pNs.get(0).size()),
             calculations.calDoNeutralM(pNs, sNd, i, k, pNs.get(0).size()),
             calculations.calDoNegativeM(pNs, sNd, i, k, pNs.get(0).size())));
+        
       System.out.print(pNd.get(i).get(k) + "|");
       }
       System.out.println();
